@@ -6,6 +6,6 @@ const ThumbnailRouter = express.Router();
 
 
 ThumbnailRouter.post('/generate', protect, generateThumbnail)
-ThumbnailRouter.delete('/generate', protect, deleteThumbnail)
+ThumbnailRouter.delete('/delete/:id', protect, deleteThumbnail)
 
 export default ThumbnailRouter;
